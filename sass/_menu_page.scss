@@ -172,40 +172,40 @@
       padding-left: 0.5rem;
     }
   
-  //   &__confirmation {
-  //     background-color: $color-tertiary;
-  //     margin: -1rem -5rem -1rem 1rem;
-  //     width: 4rem;
-  //     display:flex;
-  //     align-items:center;
-  //     justify-content:center;
-  //     transition-duration: 0.5s;
-  //   }
+    &__confirmation {
+      background-color: $color-tertiary;
+      margin: -1rem -5rem -1rem 1rem;
+      width: 4rem;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      transition-duration: 0.5s;
+    }
   
-  //   &:hover &__confirmation {
-  //     margin-right: -1rem;
-  //   }
+    &:hover &__confirmation {
+      margin-right: -1rem;
+    }
   
-  //   &__wrapIcon {
-  //     height: 1.6rem;
-  //     width: 1.6rem;
-  //     background-color: white;
-  //     display:flex;
-  //     align-items:center;
-  //     justify-content:center;
-  //     border-radius: 100px;
-  //     transform: rotate(180deg);
-  //     transition-duration: 0.5s;
+    &__wrapIcon {
+      height: 1.6rem;
+      width: 1.6rem;
+      background-color: white;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      border-radius: 100px;
+      transform: rotate(180deg);
+      transition-duration: 0.5s;
   
-  //   }
+    }
   
-  //   &:hover &__wrapIcon {
-  //     transform: rotate(0);
-  //   }
+    &:hover &__wrapIcon {
+      transform: rotate(0);
+    }
   
-  //   &__icon {
-  //     color: $color-tertiary;
-  //   }
+    &__icon {
+      color: $color-tertiary;
+    }
   }
   
   @for $i from 0 to 9 {
