@@ -19,15 +19,12 @@
       transform: translateY(0);
     }
     25% {
-      transform: translateY(0.5rem);
+      transform: translateY(1rem);
     }
     75% {
-      transform: translateY(-0.5rem);
+      transform: translateY(-1rem);
     }
     100% {
       transform: translateY(0);
     }
-    // 0% {
-    //   transform: translateY(0);
-    // }
   }

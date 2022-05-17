@@ -17,10 +17,10 @@
     transform: translateY(0);
   }
   25% {
-    transform: translateY(0.5rem);
+    transform: translateY(1rem);
   }
   75% {
-    transform: translateY(-0.5rem);
+    transform: translateY(-1rem);
   }
   100% {
     transform: translateY(0);
@@ -114,7 +114,7 @@ body, html {
   height: 1rem;
   width: 1rem;
   border-radius: 1rem;
-  animation: jump 1s;
+  animation: jump 600ms;
   animation-iteration-count: 1;
 }
 .loader__itemContainer {
@@ -281,6 +281,9 @@ body, html {
   text-decoration: none;
   color: inherit;
   display: block;
+}
+.card:hover {
+  box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
 }
 .card__img {
   height: 12rem;
@@ -511,13 +514,14 @@ body, html {
   justify-content: center;
   border-radius: 100px;
   transform: rotate(180deg);
-  transition-duration: 0.5s;
+  transition-duration: 1s;
 }
 .menuItem:hover .menuItem__wrapIcon {
   transform: rotate(0);
 }
 .menuItem__icon {
   color: #99E2D0;
+  margin-left: 1.2rem;
 }
 
 .delay-0 {
