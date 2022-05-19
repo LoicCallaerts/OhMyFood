@@ -9,6 +9,7 @@
 @keyframes loader {
   100% {
     opacity: 0;
+    z-index: -10;
   }
 }
 @keyframes jump {
