@@ -26,6 +26,14 @@
     transform: translateY(0);
   }
 }
+@keyframes hearth {
+  0% {
+    bottom: 0%;
+  }
+  100% {
+    bottom: 100%;
+  }
+}
 body, html {
   margin: 0;
   font-family: "Roboto", sans-serif;
@@ -76,12 +84,16 @@ body, html {
 }
 .footer__listElt {
   margin: 0.5rem 0;
+  font-weight: 500;
 }
 .footer__listElt:first-child {
   margin-top: 0;
 }
 .footer__listElt:last-child {
   margin-bottom: 0;
+}
+.footer__listLight {
+  margin: 0.5rem 0;
 }
 .footer__link {
   color: white;
@@ -91,7 +103,7 @@ body, html {
   text-decoration: underline;
 }
 .footer__icon {
-  width: 1.2rem;
+  width: 1rem;
   margin-right: 0.5rem;
 }
 
@@ -376,11 +388,11 @@ body, html {
 }
 .menu__title {
   font-family: "Shrikhand", "cursive";
+  font-size: 1.8rem;
 }
 .menu__btn {
   height: 2rem;
   width: 2rem;
-  background-color: transparent;
   border: transparent 0px solid;
   padding: 0;
   display: flex;
@@ -389,13 +401,17 @@ body, html {
   cursor: pointer;
   position: relative;
   background-color: black;
+  will-change: opacity;
+  transform: translateZ(0);
 }
 .menu__btn:hover::before {
   opacity: 1;
+  will-change: opacity;
+  transform: translateZ(0);
 }
 .menu__btn::before {
   opacity: 0;
-  transition: 0.5s;
+  transition: opacity 0s, 0.05s;
   content: "";
   position: absolute;
   top: 0;
@@ -403,9 +419,12 @@ body, html {
   height: 100%;
   width: 100%;
   background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
+  transition: transform ease;
+  will-change: opacity;
+  transform: translateZ(0);
 }
 .menu__like {
-  transition-duration: 0.25s;
+  transition: opacity 0s, 0.8s;
   background-color: #f6f6f6;
   position: absolute;
   top: 0;
@@ -417,9 +436,13 @@ body, html {
   justify-content: center;
   mix-blend-mode: lighten;
   font-size: 25px;
+  will-change: opacity;
+  transform: translateZ(0);
 }
 .menu__btn:hover .menu__like--noBg {
   opacity: 0;
+  will-change: opacity;
+  transform: translateZ(0);
 }
 
 .submenus {
@@ -588,6 +611,10 @@ body, html {
 .commandBtn a {
   text-decoration: none;
   color: inherit;
+}
+
+.fa-hands-helping:before {
+  font-size: 0.9rem;
 }
 
 /*# sourceMappingURL=style.css.map */
