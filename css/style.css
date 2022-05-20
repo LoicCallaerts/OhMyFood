@@ -131,7 +131,7 @@ body, html {
 }
 .loader__item--3 {
   background-color: #99E2D0;
-  animation-delay: 0.5s;
+  animation-delay: 500ms;
 }
 
 .explorer {
