@@ -82,6 +82,7 @@ $appPadding: 1rem;
 
   &__listElt {
     margin: 0.5rem 0;
+    font-weight: 500;
 
     &:first-child {
       margin-top: 0;
@@ -90,6 +91,9 @@ $appPadding: 1rem;
     &:last-child {
       margin-bottom: 0;
     }
+  }
+  &__listLight {
+    margin: 0.5rem 0;
   }
 
   &__link {
@@ -102,7 +106,7 @@ $appPadding: 1rem;
   }
 
   &__icon {
-    width: 1.2rem;
+    width: 1rem;
     margin-right: 0.5rem;
   }
 }

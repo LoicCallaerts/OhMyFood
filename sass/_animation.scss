@@ -28,3 +28,12 @@
       transform: translateY(0);
     }
   }
+
+  @keyframes hearth {
+    0% {
+      bottom: 0%;
+    }
+    100% {
+      bottom: 100%
+    }
+  }

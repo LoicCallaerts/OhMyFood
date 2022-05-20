@@ -41,12 +41,13 @@
   
     &__title {
       font-family: "Shrikhand", "cursive";
+      font-size: 1.8rem;
     }
   
     &__btn {
+
       height: 2rem;
       width: 2rem;
-      background-color: transparent;
       border: transparent 0px solid;
       padding: 0;
       display:flex;
@@ -55,14 +56,18 @@
       cursor: pointer;
       position: relative;
       background-color: black;
+      will-change: opacity;
+      transform: translateZ(0);
       
       &:hover::before {
         opacity: 1;
+        will-change: opacity;
+        transform: translateZ(0);
       }
       
       &::before {
         opacity: 0;
-        transition: 0.5s;
+        transition: opacity 0s, 0.05s;
         content: "";
         position: absolute;
         top: 0;
@@ -70,11 +75,14 @@
         height: 100%;
         width: 100%;
         background:linear-gradient(0deg, $color-primary 0%,$color-secondary 100%);
+        transition: transform ease;
+        will-change: opacity;
+        transform: translateZ(0);
       }
     }
   
     &__like {
-      transition-duration: 0.25s;
+      transition : opacity 0s, 0.8s;
       background-color: #f6f6f6;
       position: absolute;
       top: 0;
@@ -86,12 +94,17 @@
       justify-content:center;
       mix-blend-mode: lighten;
       font-size: 25px;
+      will-change: opacity;
+      transform: translateZ(0);
+
     }
   
     &__btn:hover {
       .menu__like {
         &--noBg {
           opacity: 0;
+          will-change: opacity;
+          transform: translateZ(0);
         }
       }
     }
